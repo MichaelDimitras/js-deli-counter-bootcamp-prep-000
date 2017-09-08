@@ -8,6 +8,8 @@ function takeANumber(name){
 function nowServing(){
 
   if (katzDeli.length > 0){
-    
+    var name = katzDeli[0];
+    katzDeli = katzDeli.slice(1);
+    return `Currently serving ${name}`
   }
 }
